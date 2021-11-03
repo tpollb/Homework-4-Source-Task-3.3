@@ -92,7 +92,7 @@ namespace Homework_4_Source_Task_3._1
 
             for (i = 0; i < Matrix1rows; i++)
             {
-                if (matrix1.GetUpperBound(0) + 1 != matrix2.GetUpperBound(1) + 1)
+                if ((matrix1.GetUpperBound(0) + 1 != matrix2.GetUpperBound(1) + 1) || (matrix1.GetUpperBound(1) + 1 != matrix2.GetUpperBound(0) + 1))
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Умножение не возможно");
@@ -110,7 +110,7 @@ namespace Homework_4_Source_Task_3._1
 
             for (i = 0; i < Matrix1rows; i++)
             {
-                if (matrix1.GetUpperBound(0) + 1 != matrix2.GetUpperBound(1) + 1)
+                if ((matrix1.GetUpperBound(0) + 1 != matrix2.GetUpperBound(1) + 1) || (matrix1.GetUpperBound(1) + 1 != matrix2.GetUpperBound(0) + 1))
                 {
                     break;
                 }
