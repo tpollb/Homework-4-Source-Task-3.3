@@ -24,25 +24,25 @@ namespace Homework_4_Source_Task_3._1
 
             while (Matrix1rows < 1 || Matrix1rows > 255)
             {
-                Console.WriteLine("Введите количество столбцов матрицы 1 от 2 до 255: ");
+                Console.WriteLine("Введите количество строк матрицы 1 от 2 до 255: ");
                 Matrix1rows = int.Parse(Console.ReadLine());
             }
 
             while (Matrix1Cols < 1 || Matrix1Cols > 255)
             {
-                Console.WriteLine("Введите количество строк матрицы 1 от 2 до 255: ");
+                Console.WriteLine("Введите количество столбцов матрицы 1 от 2 до 255: ");
                 Matrix1Cols = int.Parse(Console.ReadLine());
             }
 
             while (Matrix2rows < 1 || Matrix2rows > 255)
             {
-                Console.WriteLine("Введите количество столбцов матрицы 2 от 2 до 255: ");
+                Console.WriteLine("Введите количество строк матрицы 2 от 2 до 255: ");
                 Matrix2rows = int.Parse(Console.ReadLine());
             }
 
             while (Matrix2Cols < 1 || Matrix2Cols > 255)
             {
-                Console.WriteLine("Введите количество строк матрицы 2 от 2 до 255: ");
+                Console.WriteLine("Введите количество столбцов матрицы 2 от 2 до 255: ");
                 Matrix2Cols = int.Parse(Console.ReadLine());
             }
 
