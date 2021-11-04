@@ -49,7 +49,7 @@ namespace Homework_4_Source_Task_3._1
 
             int[,] matrix1 = new int[Matrix1rows, Matrix1Cols];
             int[,] matrix2 = new int[Matrix2rows, Matrix2Cols];
-            int[,] MultMatrix = new int[Matrix2rows, Matrix1Cols];
+            int[,] MultMatrix = new int[Matrix1rows, Matrix2Cols];
             
 
             //заполнение
@@ -92,7 +92,7 @@ namespace Homework_4_Source_Task_3._1
 
             for (i = 0; i < Matrix1rows; i++)
             {
-                if ((matrix1.GetUpperBound(0) + 1 != matrix2.GetUpperBound(1) + 1) || (matrix1.GetUpperBound(1) + 1 != matrix2.GetUpperBound(0) + 1))
+                if (Matrix1Cols != Matrix2rows)
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Умножение не возможно");
@@ -110,7 +110,7 @@ namespace Homework_4_Source_Task_3._1
 
             for (i = 0; i < Matrix1rows; i++)
             {
-                if ((matrix1.GetUpperBound(0) + 1 != matrix2.GetUpperBound(1) + 1) || (matrix1.GetUpperBound(1) + 1 != matrix2.GetUpperBound(0) + 1))
+                if (Matrix1Cols != Matrix2rows)
                 {
                     break;
                 }
